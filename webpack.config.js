@@ -3,7 +3,8 @@ const webpack = require('webpack');
 const MinifyPlugin = require('babel-minify-webpack-plugin');
 
 module.exports = function(env) {
-  const isProduction = env && env.production === true;
+  //const isProduction = env && env.production === true;
+  const isProduction = true;
 
   return {
     entry: path.join(__dirname, 'src/init'),
